@@ -1,0 +1,106 @@
+for version  :                                    git --version
+for check the status :                            git status
+for making a git Repository :                     git init(starting the repo making )
+
+
+for stage making all files  :                     git add .(staging all and modified files,without delete  )  
+                                                  git add -A (stage all ) 
+                                                  git add -u(stage modified and deleted,without new)
+
+
+for sending the files or save the files :         git commit -m "version 1"
+
+for checking who is commited all history :        git log  press q to exit from the log files 
+
+for changing the name of yours :                  git config --global user.name "YOUR NAME "
+                                                  git config --global user.email "YOURemail "
+
+remote and add origin :copy paste from github :  This the specific file we want  to add our project 
+
+first add the ssh key : using the docs how to add 
+
+sending to internet is called :git push -u origin master (-u is for nexttime if i want to push i do not have to write origin master again ) 
+
+
+getting from internet is called :git pull origin master 
+
+
+How to get different of files :  git diff filename.format 
+How to get different of staged  files :  git diff --staged  filename.format 
+
+
+rollback the staged back : git reset filename.format   then git checkout filename.txt
+
+
+back the file but not staged : git checkout .
+
+
+
+clone some others repo :git clone sshkeyfromother . (add . for no to make new folder )
+
+if you do not want to track some file :touch .gitignore (male a git ignore file )
+                                       notepad .gitignore (add all  .format you want to ignore refet to the ignore docs of git ignore for different codes)
+
+make a new  branch of so that the code is safe you are working in the copy :
+  
+     git branch  (display the branches )
+     git branch BRANCHNAME
+     git checkout BRANCHNAME(shifting to the branch you want to work )
+
+merge two into one : you have to come in master 
+                     git merge BRANCHNAME(MERGE INTO the master )
+                     then push 
+
+delete the later branch after merge it  :git branch -d BRANCHNAME(delete from your local computer)
+ git push origin  --delete BRANCHNAME (delete from the github)
+  
+
+
+
+
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+How to write commit messages 
+here i have fixed the bug of this this this.....
+Fixes log in bug by using the this this....
+
+
+
+3 layer architecture 
+  working file        stagging       commit 
+   file 1              file 1         file 1
+   only want some file   then do      then commit 
+
+
+if i want to change and save only this file i only choose the following and send it to stagging area the i will commit .
+
+
+
+           
